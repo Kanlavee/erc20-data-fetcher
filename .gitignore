@@ -1,0 +1,10 @@
+/node_modules/
+lib/
+*.env
+*.env.*
+!.env.example
+bun.lock
+logs/
+/db/data/*
+
+**/*.secret.yaml
