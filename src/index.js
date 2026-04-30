@@ -28,7 +28,6 @@ const PORT = parseInt(process.env.PORT, 10) || 3001;
   app.use('/api/stats', require('./routes/stats'));
   app.use('/api/sanApiTest', require('./routes/sanApiTest'));
 
-  require('./config/dbHandler.js').connect();
 
   // Static files (production only)
   if (process.env.NODE_ENV === 'production') {

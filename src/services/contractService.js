@@ -41,6 +41,7 @@ async function fetchTokenData(rpcUrl, tokenAddress, walletAddress) {
     walletQueried: walletAddress,
     totalSupply: ethers.formatUnits(totalSupplyRaw, decimals),
     balance: ethers.formatUnits(balanceRaw, decimals),
+    date: new Date().toISOString(),
   };
 }
 

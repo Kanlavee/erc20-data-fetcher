@@ -24,6 +24,7 @@ async function getTokenData(req, res) {
     console.log(`  Total Supply : ${data.totalSupply} ${data.token}`);
     console.log(`  Wallet       : ${data.walletQueried}`);
     console.log(`  Balance      : ${data.balance} ${data.token}`);
+    console.log(`  Fetched At   : ${data.date}`);
     console.log('==========================================\n');
 
     res.json({ success: true, data });

@@ -66,6 +66,23 @@ npm run dev
 
 ---
 
+## 🔗 How to Call the API
+
+Once the server is running, use any of the following methods to call `GET /api/sanApiTest`:
+
+### curl
+```bash
+curl http://localhost:3001/api/sanApiTest
+```
+
+### JavaScript (axios)
+```js
+const { data } = await axios.get('http://localhost:3001/api/sanApiTest');
+console.log(data);
+```
+
+---
+
 ## 📦 API Response
 
 ### `GET /api/sanApiTest`
